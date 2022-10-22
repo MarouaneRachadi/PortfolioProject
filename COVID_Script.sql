@@ -119,4 +119,4 @@ select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinatio
 from [dbo].[Covid-Vaccination] vac
 Join [dbo].[Covid-deaths] dea on dea.location=vac.location
 and dea.date = vac.date
-Where dea.continent is not null
+ -- Where dea.continent is not null
